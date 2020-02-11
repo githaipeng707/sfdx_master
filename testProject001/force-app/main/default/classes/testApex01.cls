@@ -1,3 +1,3 @@
 public class testApex01 {
-    // マスタ　ブランチ０５
+    // local001 変更しました。
 }
