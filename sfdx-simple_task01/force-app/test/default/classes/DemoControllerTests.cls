@@ -10,6 +10,7 @@ private class DemoControllerTests {
         system.debug('aaaaaaaaaaaaaaaaaaaa');
 
     	DemoController demo = new DemoController(new ApexPages.StandardController(contact));
+        system.debug('bbbbbbbbbbbbbbbbbbbbbb');
     	System.assertEquals(contact.Id, ApexPages.currentPage().getParameters().get('id'));
     }
 
