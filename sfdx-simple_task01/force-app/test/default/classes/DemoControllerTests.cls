@@ -5,8 +5,9 @@ private class DemoControllerTests {
     	Contact contact = new Contact(LastName='Smith');
     	insert contact;
 
-    	Test.setCurrentPage(Page.DemoPage);   	
+    	Test.setCurrentPage(Page.DemoPage);
     	ApexPages.currentPage().getParameters().put('lastName', 'Smith');
+        system.debug('aaaaaaaaaaaaaaaaaaaa');
 
     	DemoController demo = new DemoController(new ApexPages.StandardController(contact));
     	System.assertEquals(contact.Id, ApexPages.currentPage().getParameters().get('id'));
